@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="sprintHeader">Manage your Sprint</header>
+
+    <main>
+
+        <div class="lists">
+
+
+            <section id="backLog" class="column-list">
+                <h3 id="backLogTXT">Sprint Backlog</h3>
+                <P>Write a task in the inputfield down below and press enter</P>
+                <input id="newCard-btn" type="button" value="Make new Card">
+
+
+                <div id="dialog" title="Creat Card">
+                    <p>Add Title, Description and StoryPoints</p>
+                    <input id="titleCard" type="text" placeholder="Title"> <br>
+                    <input id="descriptionCard" type="text" placeholder="Description"> <br>
+                    <input id="storyPCard" type="text" placeholder="StoryPoints">
+                    <input id="value-btn" type="button" value="Add value">
+                </div>
+                <!--<div id="dialogAppend"></div>-->
+
+                <div id="sortable1" class="list-body"></div>
+
+            </section>
+
+            <section id="to-do" class="column list">
+                <header id="todoHeader">
+                    <h3>To Do</h3>
+                </header>
+                <div id="sortable2" class="list-body"></div>
+            </section>
+
+            <section id="in-progress" class="column list">
+                <header id="inProgressHeader">
+                    <h3>In Progress</h3>
+                </header>
+                <div id="sortable2" class="list-body"></div>
+            </section>
+
+            <section id="done" class="column list">
+                <header id="doneHeader">
+                    <h3>Done</h3>
+                </header>
+                <div id="sortable3" class="list-body"></div>
+            </section>
+
+        </div>
+
+    </main>
+
+
+
+
+
+    <script src="script/jquery-ui.js"></script>
+    <script src="script/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+#sprintHeader {
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+    color: gray;
+}
+
+main {
+    margin-top: 8px;
+    display: flex;
+    width: 100%;
+}
+
+#dialog {
+    display: none;
+}
+
+section {
+    width: 400px;
+}
+
+#todoHeader {
+    background-color: darkblue;
+}
+
+#inProgressHeader {
+    background-color: orange;
+}
+
+#doneHeader {
+    background-color: green;
+}
+
+button {
+    cursor: pointer;
+}
+
+.column {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+}
+
+.lists {
+    text-align: center;
+    display: flex;
+}
+
+.list {
+    align-self: flex-start;
+}
+
+.list>header {
+    color: white;
+}
+
+.list-body {
+    height: 50%;
+}
+
+.kanban-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin-top: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    text-align: center;
+}
+
+.kanban-card>button {
+    align-self: flex-start;
+}
+
+.kanban-card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
